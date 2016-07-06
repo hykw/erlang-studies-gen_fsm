@@ -20,14 +20,11 @@ $ erl
   - select へ遷移
 - 状態：select
   - decide()で状態：checking へ遷移
-  - cancel()は無視
-  - pay()は無視
+  - それ以外は無視
 - 状態：checking
-  - cancel()は状態：select へ遷移
-  - select()は無視
   - pay()は状態：serve へ遷移
+  - cancel()は状態：select へ遷移
+  - それ以外は無視
 - 状態：serve
-  - cancel()は無視
-  - select()は無視
-  - pay()は無視
   - got()は状態：select へ遷移
+  - それ以外は無視

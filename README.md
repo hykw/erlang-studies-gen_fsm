@@ -1,18 +1,7 @@
 # erlang-studies-gen_fsm
-Erlang の gen_fsm の練習
+Elixir では v0.12.5 で gen_fsm が廃止となっており、https://github.com/elixir-lang/elixir/commit/455eb4c4ace81ce60b347558f9419fe3c33d8bf7 にて `you can also use Erlang's :gen_fsm directly, which GenFSM is a simple wrapper for.` と言われているため、まず Erlang で gen_fsm を書き、それを Elixir に対応してみた。
 
-## Usage
-
-```
-$ erl
-> c(sample).
-
-> sample:start().
-
-> sample:decide().
-> sample:pay().
-> sample:get().
-```
+Elixir からの :gen_fsm 呼び出しは、[light_switch](https://github.com/gogogarrett/light_switch) がかなり参考になった。
 
 ## state
 
@@ -28,3 +17,28 @@ $ erl
 - 状態：serve
   - got()は状態：select へ遷移
   - それ以外は無視
+
+## Usage(Erlang版)
+
+```
+$ erl
+> c(sample).
+
+> sample:start().
+
+> sample:decide().
+> sample:pay().
+> sample:get().
+```
+
+## Usage(Elixir版)
+
+```
+$ iex fsm.exs
+
+> FSM.start
+
+> FSM.decide
+> FSM.pay
+> FSM.get
+```

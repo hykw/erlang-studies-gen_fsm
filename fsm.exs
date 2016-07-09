@@ -1,7 +1,6 @@
 # https://speakerdeck.com/gogogarrett/gen-fsm-meets-elixir
 
 defmodule FSM do
-#  @behaviour :gen_fsm
 
   @name :FSM
 

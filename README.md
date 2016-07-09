@@ -7,7 +7,7 @@ Erlang の gen_fsm の練習
 $ erl
 > c(sample).
 
-> sample:start_link().
+> sample:start().
 
 > sample:decide().
 > sample:pay().

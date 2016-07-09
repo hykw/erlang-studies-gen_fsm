@@ -44,7 +44,7 @@ serve(got, _) ->
   {next_state, select, []};
 serve(_, LoopData) ->
   disp_ignore(),
-  {next_state, got, LoopData}.
+  {next_state, serve, LoopData}.
 
 
 

@@ -22,13 +22,13 @@ Elixir からの :gen_fsm 呼び出しは、[light_switch](https://github.com/go
 
 ```
 $ erl
-> c(sample).
+> c(fsm).
 
-> sample:start().
+> fsm:start().
 
-> sample:decide().
-> sample:pay().
-> sample:get().
+> fsm:decide().
+> fsm:pay().
+> fsm:get().
 ```
 
 ## Usage(Elixir版)

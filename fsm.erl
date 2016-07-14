@@ -1,4 +1,4 @@
--module(sample).
+-module(fsm).
 -behaviour(gen_fsm).
 
 -export([start/0]).
